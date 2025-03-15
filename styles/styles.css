@@ -12,21 +12,17 @@ header {
     padding: 10px 0;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+nav {
+    background-color: #333;
+    padding: 10px;
     text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
+nav a {
     color: white;
-    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
 }
 
 /* Main Content */
@@ -35,7 +31,6 @@ main {
     text-align: center;
 }
 
-/* Ensuring `h1` is properly inside `main` */
 main h1 {
     font-size: 24px;
     color: #222;
@@ -66,46 +61,6 @@ main img {
 /* Paragraphs */
 p {
     padding: 0;
-}
-
-/* Contact Form */
-form {
-    width: 60%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-input, textarea {
-    width: 90%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button {
-    margin-top: 15px;
-    background-color: #005f73;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0a9396;
 }
 
 /* Footer */
