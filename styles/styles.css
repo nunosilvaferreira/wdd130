@@ -1,63 +1,119 @@
-/* General page styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Header styling */
+/* Header */
 header {
-    background-color: #005f73;
-    color: white;
-    padding: 20px;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
-    font-size: 1.5em;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
-/* Navigation bar */
-nav {
-    background-color: #0a9396;
-    padding: 10px;
+/* Main Content */
+main {
+    padding: 20px;
     text-align: center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em;
+/* Ensuring `h1` is properly inside `main` */
+main h1 {
+    font-size: 24px;
+    color: #222;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main content styling */
-main {
+/* Aside Styles */
+aside {
+    background-color: #ddd;
+    padding: 15px;
+    margin: 20px auto;
     width: 80%;
-    margin: auto;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Main Image Styling */
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Paragraphs */
+p {
+    padding: 0;
+}
+
+/* Contact Form */
+form {
+    width: 60%;
+    margin: 20px auto;
     background: white;
     padding: 20px;
+    border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
-/* Image styling */
-img {
-    max-width: 200px;
-    border-radius: 10px;
+label {
     display: block;
-    margin: 10px auto;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a9396;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #005f73;
+    background-color: #333;
     color: white;
+    text-align: center;
+    padding: 10px;
     margin-top: 20px;
+    border-top: 3px solid #555;
 }
