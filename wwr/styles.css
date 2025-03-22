@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #C5D1E3;
+    color: #1B3A56;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1B3A56;
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #C5D1E3;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.hero article img {
+    width: 100px;
+    margin-right: 10px;
+    float: right;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    color: #174A2F;
+    font-size: 2rem;
+}
+
+section img {
+    width: 18%;
+    margin: 5px;
+    border: 2px solid #1B3A56;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1B3A56;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer img {
+    width: 24px;
+    margin: 0 5px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+:root {
+    --primary-color: #1B3A56;
+    --secondary-color: #174A2F;
+    --accent1-color: #FFFFFF;
+    --accent2-color: #C5D1E3;
+    --dark-overlay: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    section img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero article {
+        flex-direction: column;
+    }
+
+    section img {
+        width: 100%;
+    }
+}
