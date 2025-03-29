@@ -184,33 +184,41 @@ nav a:hover {
 footer {
     background-color: var(--primary-color);
     color: var(--accent1-color);
-    padding: 1.5rem;
-    text-align: center;
+    padding: 1.5rem 2rem;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 1.5rem;
+    margin-top: 0;
 }
 
-.social-links img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease;
+.social-links a {
+    color: var(--accent1-color);
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-links img:hover {
+.social-links a:hover {
     transform: scale(1.2);
+    color: var(--accent2-color);
 }
+
 
 /* Responsive Design */
 @media (max-width: 900px) {
     .history-content {
         flex-direction: column;
     }
-    
     .history-content img {
         width: 100%;
         max-width: 500px;
@@ -223,16 +231,13 @@ footer {
         grid-template-columns: 1fr;
         justify-items: center;
     }
-    
     nav {
         margin-top: 1rem;
         justify-content: center;
     }
-    
     .hero h1 {
         font-size: clamp(1.5rem, 6vw, 2.5rem);
     }
-    
     .hero article {
         position: relative;
         max-width: 100%;
@@ -240,7 +245,6 @@ footer {
         left: auto;
         margin: 1rem;
     }
-    
     .adventure-gallery figure {
         flex: 1 1 150px;
     }
@@ -252,12 +256,10 @@ footer {
         align-items: center;
         gap: 0.5rem;
     }
-    
     .hero h1 {
         width: 95%;
         padding: 0.5rem;
     }
-    
     .adventure-gallery figure {
         flex: 1 1 100%;
     }
